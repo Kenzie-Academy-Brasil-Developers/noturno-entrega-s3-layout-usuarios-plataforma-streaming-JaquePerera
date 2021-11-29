@@ -13,26 +13,108 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** RODAPÉ
 **** PÁGINA INICIAL
 */
+/*reset*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+  }
 
 /* VARIÁVEIS */
 :root{
-  
+	
 }
 
 /*BODY*/
 	body{
 
+		font: Helvetica, Arial, sans-serif;
+		color: white;
+		background-color: #00002e;
 	}
 
 /*TOPO*/
-	header.topo{
-		
-	}
+header.topo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
 
 /*RODAPÉ*/
+footer {
+	display: flex;
+	justify-content: center;
+	width: 858px;
+	padding: 25px;
 	
+}
+
+button {
+
+		background: transparent;
+		border: 1px solid white;
+		border-style: ridge;
+		padding: 15px;
+		color: white;
+
+	}
+
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+div.pg-home{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+h2{
+	text-align: center;
+}
+
+ul{
+	display: flex;
+	justify-content: space-between;
+	width: 858px;
+	padding: 25px;
+}
+
+li{
+	list-style-type: none;
+	width: 186px;
+	height: 186px;
+	text-align:center;
+}
+
+li img{
+	border: 1px;
+	width: 186px;
+	height: 186px;
+	
+}
+li:hover {
+	border: 1px solid white;
+}
+
+figcaption {
+	display:none;
+}
+
+
+@media (max-width: 480px) {
+	ul{
+		width:100%;
+		flex-wrap: wrap;
 	}
+  }
+  
+  @media (min-width: 640px) {
+	header.topo {
+		justify-content: flex-start;
+	}
+
+  }
