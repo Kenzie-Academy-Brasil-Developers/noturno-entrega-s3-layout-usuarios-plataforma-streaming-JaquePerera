@@ -19,6 +19,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
+
   }
 
 /* VARIÁVEIS */
@@ -28,10 +29,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*BODY*/
 	body{
-
 		font: Helvetica, Arial, sans-serif;
 		color: white;
 		background-color: #00002e;
+
 	}
 
 /*TOPO*/
@@ -106,6 +107,10 @@ figcaption {
 
 
 @media (max-width: 480px) {
+	section{
+		width:480px;
+	}
+
 	ul{
 		width:100%;
 		flex-wrap: wrap;
