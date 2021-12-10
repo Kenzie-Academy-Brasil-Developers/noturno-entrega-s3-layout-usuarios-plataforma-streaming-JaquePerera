@@ -23,12 +23,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
   }
 
 /* VARIÁVEIS */
-:root{
+/*:root{
 	
-}
+}*/
 
 /*BODY*/
 	body{
+
 		font: Helvetica, Arial, sans-serif;
 		color: white;
 		background-color: #00002e;
@@ -114,7 +115,22 @@ figcaption {
 	ul{
 		width:100%;
 		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
+
+	li img{
+		padding:30px;
+		
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		width: 480px;
+		padding: 25px;
+		
+	}
+	
   }
   
   @media (min-width: 640px) {
